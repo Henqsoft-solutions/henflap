@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Breakout</title>
+        <link rel="stylesheet" href="style.css"/>
+        <script src="sweetAlert2.js"></script>
+    </head>
+    <body id="body">
+        <div class="wrapper">
+            <header class="header" id="header">
+                <nav class="navBar">
+                    <div class="navBtn">Home</div>
+                    <div class="navBtn">Outfit</div>
+                    <div class="navBtn">Career</div>
+                    <div class="navBtn">Coins</div>
+                    <div class="navBtn">Starts</div>
+                    <div class="navBtn">Time</div>
+                    <div class="navBtn">Experience</div>
+                </nav>
+            </header>
+            <div class="screen">
+                <div class="container" id="container">
+                <aside>
+                    <div class="mainLogo"></div>
+                    <div class="levelsContainer">
+                        <div class="levels" id="level1">Level one</div>
+                        <div class="levels" id="level2">Level two</div>
+                        <div class="levels" id="level3">Level three</div>
+                        <div class="levels" id="level4">Level four</div>
+                        <div class="levels" id="level5">Level five</div>
+                        <div class="levels" id="level6">Level six</div>
+                        <div class="levels" id="level7">Level seven</div>
+                        <div class="levels" id="level8">Level eight</div>
+                        <div class="levels" id="level9">Level nine</div>
+                        <div class="levels" id="level10">Level ten</div> 
+                    </div>
+                </aside>
+                
+                <main>
+                    <header>HenFlap</header>
+                    <div class="right">
+                        <div class="LevelImgContainer"></div>  
+                    </div>
+                    
+                    <footer>
+                        <div class="footerText">Powered by henqsoft solutions</div>
+                        <div class="footerButtons">
+                            <div class="footerBtn">Settings</div>
+                            <div class="footerBtn" id="menuPlayBtn">Play</div>
+                        </div>
+                    </footer>
+                </main>
+            </div>
+            </div>
+        </div>
+        
+        
+        
+        <!-- Load all the pictures and images to be used in the game-->
+        <div class="images hide" id="images">
+            <img src="bg1.png" id="backgroundImage">
+        <img src="frame-1.png" id="bird1">
+        <img src="frame-2.png" id="bird2">
+        <img src="frame-3.png" id="bird3">
+        <img src="frame-4.png" id="bird4">
+        <img src="bird.png" id="enemyBirdSprite">
+        </div>
+        
+        <div class="audio">
+            <audio src="laba.mp3" id="laba" loop></audio>
+            <audio src="blinding.mp3" id="blinding" loop></audio>
+            <audio src="gameOver.mp3" id="gameOverSound"></audio>
+            <audio src="die.mp3" id="die"></audio>
+            <audio src="dying.wav" id="dying"></audio>
+        </div>
+        
+        
+        <canvas id="canvas" class="hideCanvas">Your browser doesn't support canvas. Try downloading a better updated browser like an up to date chrome or edge</canvas>
+        
+        <!-- Create a scoreboard to hold all the score progress of the game-->
+        <div class="scoreboard hide" id="scoreBoard">
+            <div id="scoreBox"><div id="scoreCaption">SCORE :</div><div id="realScore">0</div></div>
+            <div id="lifeBar"><div id="lifeLoader"></div></div>
+            <div id="timeBox"><div id="speedCaption">SPEED :</div><div id="realSpeed">0</div></div>
+        </div>
+        <!-- Reference the javascript of the game page to run the game-->
+        <script src="script.js">Your browser does not have have javascript Enabled on it. Try checking your browser settings or download an up to date browser which can handle all the logic of the game</script>
+        
+    </body>
+</html>
