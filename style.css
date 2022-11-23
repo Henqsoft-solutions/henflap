@@ -393,6 +393,7 @@ canvas {
     word-wrap: break-word;
     height: 50px;
     opacity: 100%;
+    cursor: pointer;
 }
 
 /* Beginning of the media query for the level selection page*/
