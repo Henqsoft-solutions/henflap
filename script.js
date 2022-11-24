@@ -139,7 +139,7 @@ class Bird {
 //            this.y = canvas.height / 2;
         } else {
             this.vy += this.weight;
-            this.vy *= 1;
+            // this.vy *= 1;
             this.y += this.vy;
         }
         
